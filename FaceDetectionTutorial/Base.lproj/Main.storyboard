@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PK2-R0-wGN">
-                                <rect key="frame" x="136" y="211.99999999999997" width="121.33333333333331" height="98.666666666666657"/>
+                                <rect key="frame" x="88.333333333333329" y="212" width="216.33333333333337" height="163"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bc-Zi-C0T">
-                                        <rect key="frame" x="0.0" y="0.0" width="121.33333333333333" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="216.33333333333334" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Crop to Face"/>
                                         <connections>
@@ -28,11 +28,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMI-IJ-xKq">
-                                        <rect key="frame" x="0.0" y="64.333333333333314" width="121.33333333333333" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="64.333333333333314" width="216.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Box on Face"/>
                                         <connections>
                                             <segue destination="Hee-aK-nzf" kind="show" id="ZsG-Sm-1vh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZv-x5-QXz">
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="216.33333333333334" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Box on Face with Camera"/>
+                                        <connections>
+                                            <segue destination="Sao-uE-kgq" kind="show" id="QZD-p2-iJT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -156,6 +164,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDy-Ab-jAa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940" y="-5"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="zyL-w6-adp">
+            <objects>
+                <viewController id="Sao-uE-kgq" customClass="ViewController3" customModule="FaceDetectionTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bls-HR-oKc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3HW-hL-Jq7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iFt-zM-gcL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liw-6j-RPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="664"/>
         </scene>
     </scenes>
     <resources>
